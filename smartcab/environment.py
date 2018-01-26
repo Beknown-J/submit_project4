@@ -33,6 +33,11 @@ class Environment(object):
     hard_time_limit = -100  # Set a hard time limit even if deadline is not enforced.
 
     def __init__(self, verbose=False, num_dummies=100, grid_size = (8, 6)):
+        # type: (object, object, object) -> object
+        """
+
+        :rtype: object
+        """
         self.num_dummies = num_dummies  # Number of dummy driver agents in the environment
         self.verbose = verbose # If debug output should be given
 
